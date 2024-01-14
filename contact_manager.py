@@ -168,7 +168,7 @@ class Record:
 class AddressBook(UserDict):
     # Adds a record to the address book
     def __init__(self, db_file='database/contacts.db'):
-        super().__init__()  # Додайте цей рядок для виклику конструктора батьківського класу
+        super().__init__()
         self.db_file = db_file
         self._create_table()
 
